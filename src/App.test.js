@@ -625,6 +625,6 @@ test('data is fetched and runs correctly', async () => {
 
     userEvent.click(screen.getByText(/season 1/i));
 
-    expect(screen.getAllByTestId('episode')).toHaveLength(8)
+    expect(screen.getAllByText(/chapter/i)).toHaveLength(8);
 
 });
